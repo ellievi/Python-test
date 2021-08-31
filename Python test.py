@@ -7,6 +7,32 @@ print((9**2*6+2)-1)
 print(abs(54-57))
 print(min(34, 29, 31))
 
+print('CALCULADORA:')
+print('+ Adição')
+print('- Subtração')
+print('* Multiplicação')
+print('/ Divisão')
+print('Pressione outra tecla para sair ')
+op = input('Qual operação deseja fazer? ')
+if op == '+' or op == '-' or op == '*' or op == '/':
+  x = int(input('Digite o primeiro valor: '))
+  y = int(input('Digite o segundo valor: '))
+if (op == '+'):
+  res = x + y
+  print('Resultado: {} + {} = {}'.format(x, y, res))
+elif (op == '-'):
+  res = x - y
+  print('Resultado: {} - {} = {}'.format(x, y, res))
+elif (op == '*'):
+  res = x * y
+  print('Resultado: {} * {} = {}'.format(x, y, res))
+elif (op == '/'):
+  res = x / y
+  print('Resultado: {} / {} = {}'.format(x, y, res))
+else: 
+  print('Operação inválida.')
+print('Encerrando o programa...')
+
 nota = 8
 disciplina = 'Lógica de Programação e Algoritmos'
 
@@ -236,27 +262,6 @@ elif (produto == 3):
 else:
     print('Produto não existente')
 
-    print('CALCULADORA:')
-print('+ Adição')
-print('- Subtração')
-print('* Multiplicação')
-print('/ Divisão')
-print('Pressione outra tecla para sair ')
-op = input('Qual operação deseja fazer? ')
-x = int(input('Digite o primeiro valor: '))
-y = int(input('Digite o segundo valor: '))
-if (op == '+'):
-    res = x + y
-    print('Resultado: {} + {} = {}'.format(x, y, res))
-elif (op == '-'):
-    res = x - y
-    print('Resultado: {} - {} = {}'.format(x, y, res))
-elif (op == '*'):
-    res = x * y
-    print('Resultado: {} * {} = {}'.format(x, y, res))
-elif (op == '/'):
-    res = x / y
-    print('Resultado: {} / {} = {}'.format(x, y, res))
 
 print('PAGAMENTO:')
 print('1 - à vista')
