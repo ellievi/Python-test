@@ -257,3 +257,30 @@ elif (op == '*'):
 elif (op == '/'):
     res = x / y
     print('Resultado: {} / {} = {}'.format(x, y, res))
+
+print('PAGAMENTO:')
+print('1 - à vista')
+print('2 - Parcelamento em 3x')
+print('3 - Parcelamento em 5x')
+print('4 - Parcelamento em 10x')
+print('Pressione outra tecla para sair')
+op = int(input('Qual forma de pagamento deseja fazer?'))
+valor = float(input('Qual o preço do produto? '))
+if (op == 1):
+  valor_final = valor * 0.95
+  print('Produto comprado À vista. Total a pagar: {}'.format(valor_final))
+elif (op == 2):
+  valor_final = valor
+  parcela = valor_final / 3
+  print('Produto parcelado em 3x. Total a pagar: {}. Valor da parcela: {}'.format(valor_final, parcela))
+elif (op == 3):
+  valor_final = valor * 1.02
+  parcela = valor_final / 5
+  print('Produto parcelado em 5x. Total a pagar: {}. Valor da parcela: {}'.format(valor_final,parcela))
+elif (op == 4):
+  valor_final = valor * 1.08
+  parcela = valor_final / 10
+  print('Produto parcelado em 10x. Total a pagar: {}. Valor da parcela: {}'.format(valor_final, parcela))
+else:
+  print('Operação inválida!')    
+    
