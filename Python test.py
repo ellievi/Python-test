@@ -7,6 +7,13 @@ print((9**2*6+2)-1)
 print(abs(54-57))
 print(min(34, 29, 31))
 
+x = 10
+while (x <= 10 and x >= 0):
+  print (x)
+  x = x - 1
+  
+print('Fogo!')
+
 print('CALCULADORA:')
 print('+ Adição')
 print('- Subtração')
